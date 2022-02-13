@@ -1,6 +1,6 @@
 import { createContext, useState, useEffect } from 'react'
 
-const FeedbackContext = createContext()
+const DatabaseIdContext = createContext()
 
 export const DatabaseProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true)
@@ -73,7 +73,7 @@ export const DatabaseProvider = ({ children }) => {
   }
 
   return (
-    <FeedbackContext.Provider
+    <DatabaseIdContext.Provider
       value={{
         feedback,
         feedbackEdit,
@@ -85,8 +85,8 @@ export const DatabaseProvider = ({ children }) => {
       }}
     >
       {children}
-    </FeedbackContext.Provider>
+    </DatabaseIdContext.Provider>
   )
 }
 
-export default FeedbackContext
+export default DatabaseIdContext
