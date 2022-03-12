@@ -1,4 +1,4 @@
-import { DatabaseProvider } from "./components/context/DatabaseIdContext";
+import { DatabaseProvider } from "./components/context/MessageBoxContext";
 import {
   BrowserRouter as Router,
   NavLink,
@@ -6,7 +6,7 @@ import {
   Routes,
 } from "react-router-dom";
 import React from "react";
-import RegisterForm from "./components/RegisterForm";
+import Login from "./components/login/login";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
             path="/"
             element={
               <>
-                <RegisterForm />
+                <Login />
               </>
             }
           ></Route>
