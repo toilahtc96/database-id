@@ -22,7 +22,7 @@ code {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #202142;
+  background-color: 	rgb(65, 104, 187);
   color: #fff;
   line-height: 1.6;
 }
@@ -32,10 +32,11 @@ ul {
 }
 
 .container {
-  max-width: 768px;
+  max-width: 1000px;
   margin: auto;
   padding: 0 20px;
 }
+
 
 header {
   height: 70px;
@@ -50,7 +51,7 @@ header {
   background-color: #fff;
   color: #333;
   border-radius: 15px;
-  padding: 40px 50px;
+  padding: 60px 70px;
   margin: 20px 0;
   position: relative;
 }
